@@ -15,10 +15,9 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t semaev/toolbox:latest . '
+                	sh 'docker build -t docker/toolbox:latest . '
                 }
             }
         }
     }
 }
-© 2021 GitHub, Inc.
